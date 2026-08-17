@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай — ИИ-креатор. Видео для рекламы и образования</title>
+    <meta name="description" content="ИИ-креатор из Набережных Челнов. Создаю короткие видео для соцсетей, рекламы и образовательного контента: Reels, Shorts, TikTok, AI-аватары, генерация нейросетями.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="bg-fx" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="noise"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <a href="#hero" class="nav__logo" data-scroll>
+            <span class="nav__logo-mark">НК</span>
+            <span class="nav__logo-text">ИИ-креатор</span>
+        </a>
+        <nav class="nav__links" aria-label="Основная навигация">
+            <a href="#works" data-scroll>Работы</a>
+            <a href="#services" data-scroll>Услуги</a>
+            <a href="#about" data-scroll>Обо мне</a>
+            <a href="#pricing" data-scroll>Цены</a>
+            <a href="#contact" data-scroll>Контакты</a>
+        </nav>
+        <a href="#contact" class="btn btn--ghost nav__cta" data-scroll>Обсудить проект</a>
+        <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav__mobile" id="mobileMenu">
+            <a href="#works" data-scroll>Работы</a>
+            <a href="#services" data-scroll>Услуги</a>
+            <a href="#about" data-scroll>Обо мне</a>
+            <a href="#pricing" data-scroll>Цены</a>
+            <a href="#contact" data-scroll>Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__badge reveal">ИИ-креатор · Набережные Челны</div>
+            <h1 class="hero__title reveal">
+                Видео на стыке <span class="grad">человека</span> и <span class="grad">нейросетей</span>
+            </h1>
+            <p class="hero__subtitle reveal">
+                Привет, я Николай. Создаю короткие видео для рекламы и образовательного контента — с помощью нейросетей и от души. Reels, Shorts, TikTok, AI-аватары.
+            </p>
+            <div class="hero__actions reveal">
+                <a href="#works" class="btn btn--primary" data-scroll>
+                    <span class="btn__shine"></span>Посмотреть работы
+                </a>
+                <a href="#contact" class="btn btn--outline" data-scroll>Обсудить проект</a>
+            </div>
+            <div class="hero__facts reveal">
+                <div class="fact"><span class="fact__num">9:16</span><span class="fact__label">формат под ключ</span></div>
+                <div class="fact"><span class="fact__num">AI</span><span class="fact__label">аватары и генерация</span></div>
+                <div class="fact"><span class="fact__num">∞</span><span class="fact__label">работа онлайн по РФ</span></div>
+            </div>
+        </section>
+
+        <section class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <span>Reels</span><span>Shorts</span><span>TikTok</span><span>AI-аватары</span><span>Генерация видео</span><span>Монтаж</span><span>Обучающий контент</span>
+                <span>Reels</span><span>Shorts</span><span>TikTok</span><span>AI-аватары</span><span>Генерация видео</span><span>Монтаж</span><span>Обучающий контент</span>
+            </div>
+        </section>
+
+        <section class="works section" id="works">
+            <div class="section__head reveal">
+                <h2 class="section__title">Мои <span class="grad">работы</span></h2>
+                <p class="section__subtitle">Живые примеры: от полностью сгенерированного аватара до монтажа ваших исходников. Без «красивой» теории — только результат.</p>
+            </div>
+            <div class="works__filters reveal" id="filters">
+                <button class="chip is-active" data-filter="all">Все</button>
+                <button class="chip" data-filter="avatar">AI-аватар</button>
+                <button class="chip" data-filter="montage">Монтаж</button>
+                <button class="chip" data-filter="broll">B-roll</button>
+            </div>
+            <div class="works__grid" id="worksGrid">
+
+                <article class="card reveal" data-cat="avatar">
+                    <div class="card__media">
+                        <video src="../Video/0813.mp4" controls preload="metadata" playsinline></video>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__tags"><span class="tag tag--avatar">AI-аватар</span></div>
+                        <h3 class="card__title">Видео с AI-аватаром</h3>
+                        <p class="card__text">Аватар, внешность, мимика и речь — всё создано нейросетями от идеи до финального файла. Без студии и съёмок.</p>
+                    </div>
+                </article>
+
+                <article class="card reveal" data-cat="montage">
+                    <div class="card__media">
+                        <video src="../Video/%D0%98%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE.mp4" controls preload="metadata" playsinline></video>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__tags"><span class="tag tag--montage">Монтаж</span></div>
+                        <h3 class="card__title">Новости мира ИИ — монтаж</h3>
+                        <p class="card__text">Смонтированный ролик из исходников заказчика: ритм, акценты, субтитры. Готов к публикации в 9:16.</p>
+                    </div>
+                </article>
+
+                <article class="card reveal" data-cat="broll">
+                    <div class="card__media">
+                        <video src="../Video/B-roll1-Grock.mp4" controls preload="metadata" playsinline></video>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__tags"><span class="tag tag--broll">B-roll</span></div>
+                        <h3 class="card__title">Генерация B-roll</h3>
+                        <p class="card__text">Фрагменты-вставки, сгенерированные нейросетями. Держат внимание и делают ролик живым без съёмок.</p>
+                    </div>
+                </article>
+
+                <article class="card reveal" data-cat="broll">
+                    <div class="card__media">
+                        <video src="../Video/B-roll2-Hailuo.mp4" controls preload="metadata" playsinline></video>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__tags"><span class="tag tag--broll">B-roll</span></div>
+                        <h3 class="card__title">Генерация B-roll 2</h3>
+                        <p class="card__text">Ещё один пример генерации визуального ряда с помощью ИИ под конкретную задачу.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="section__head reveal">
+                <h2 class="section__title">Чем я могу быть <span class="grad">полезен</span></h2>
+                <p class="section__subtitle">Подберу формат под вашу задачу и доведу ролик до готовности.</p>
+            </div>
+            <div class="services__grid">
+                <article class="service reveal">
+                    <div class="service__icon">🎬</div>
+                    <h3>Короткие видео для соцсетей</h3>
+                    <p>Reels, Shorts и TikTok: рекламные ролики, тизеры, новостные и развлекательные форматы. Делаю так, чтобы зритель досмотрел до конца.</p>
+                </article>
+                <article class="service reveal">
+                    <div class="service__icon">🧑‍🚀</div>
+                    <h3>Видео с AI-аватаром</h3>
+                    <p>Полностью сгенерированный аватар ведёт ваш ролик. Для онлайн-курсов, лекций и «говорящих голов» без студии и актёров.</p>
+                </article>
+                <article class="service reveal">
+                    <div class="service__icon">📚</div>
+                    <h3>Обучающий контент</h3>
+                    <p>Объясняю сложное просто: уроки, инструкции, разборы. Структурирую материал и превращаю в понятные короткие ролики.</p>
+                </article>
+                <article class="service reveal">
+                    <div class="service__icon">✂️</div>
+                    <h3>Монтаж из ваших исходников</h3>
+                    <p>Вы присылаете материалы — я собираю готовый ролик, который можно сразу публиковать: ритм, субтитры, акценты, чистка.</p>
+                </article>
+                <article class="service reveal">
+                    <div class="service__icon">⚡</div>
+                    <h3>Генерация видео нейросетями</h3>
+                    <p>Создание визуального ряда, b-roll и сцен с помощью ИИ (Veo, Hailuo и другие), когда нужны кадры, которые невозможно снять.</p>
+                </article>
+                <article class="service reveal service--highlight">
+                    <div class="service__icon">🚀</div>
+                    <h3>Видео под ключ</h3>
+                    <p>Беру на себя всё: от идеи и сценария до финального файла. Вам остаётся только опубликовать готовый ролик.</p>
+                    <a href="#contact" class="service__link" data-scroll>Обсудить задачу →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section__head reveal">
+                <h2 class="section__title">Привет, я <span class="grad">Николай</span></h2>
+            </div>
+            <div class="about__content">
+                <div class="about__text reveal">
+                    <p>Я ИИ-креатор из Набережных Челнов. Всё моё внимание сейчас — короткие видео для рекламы и образовательного контента: Reels, Shorts, TikTok, обучающие ролики.</p>
+                    <p>Мой путь — практика. Сначала учебные проекты, затем самостоятельные работы: ролики с AI-аватаром, монтаж чужих исходников, генерация видео нейросетями. Я учусь на живых задачах, поэтому знаю, как довести ролик до результата, а не до «красивой картинки в папке».</p>
+                    <p>Работаю с нейросетями Veo, Hailuo, Kling и CapCut. Мои сильные стороны — внимательность к деталям, аккуратность и желание сделать именно то, что нужно вам.</p>
+                    <p class="about__accent">Я открыт к любым задачам: берусь за проекты разного масштаба и отвечаю всем, кто пишет. Расскажите свою идею — вместе разберёмся, какое видео вам нужно.</p>
+                </div>
+                <aside class="about__aside reveal">
+                    <div class="about__card">
+                        <div class="about__avatar">НК</div>
+                        <h3>Николай</h3>
+                        <p>ИИ-креатор · Набережные Челны</p>
+                        <ul class="about__tools">
+                            <li><span>Veo</span></li>
+                            <li><span>Hailuo</span></li>
+                            <li><span>Kling</span></li>
+                            <li><span>CapCut</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn--primary btn--block" data-scroll>
+                            <span class="btn__shine"></span>Написать мне
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="pricing section" id="pricing">
+            <div class="section__head reveal">
+                <h2 class="section__title">Сколько это <span class="grad">стоит</span></h2>
+                <p class="section__subtitle">Стоимость зависит от сложности задачи и формата. Напишите мне, что нужно, — вернусь с точной оценкой. А пока — ориентиры.</p>
+            </div>
+            <div class="pricing__grid">
+
+                <article class="price reveal">
+                    <h3 class="price__name">Короткий ролик</h3>
+                    <p class="price__desc">Монтаж из ваших исходников. Новости, тизеры, простые рекламные форматы.</p>
+                    <div class="price__amount">по запросу</div>
+                    <ul class="price__list">
+                        <li>Формат 9:16</li>
+                        <li>Срок 1–3 дня</li>
+                        <li>Готов к публикации</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline btn--block" data-scroll>Заказать</a>
+                </article>
+
+                <article class="price price--featured reveal">
+                    <div class="price__badge">Популярно</div>
+                    <h3 class="price__name">Ролик с AI-аватаром</h3>
+                    <p class="price__desc">Онлайн-курсы, лекции, «говорящая голова» без студии и съёмок.</p>
+                    <div class="price__amount">по запросу</div>
+                    <ul class="price__list">
+                        <li>Генерация аватара</li>
+                        <li>Срок 2–5 дней</li>
+                        <li>Озвучка и субтитры</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--primary btn--block" data-scroll>
+                        <span class="btn__shine"></span>Заказать
+                    </a>
+                </article>
+
+                <article class="price reveal">
+                    <h3 class="price__name">Обучающий ролик</h3>
+                    <p class="price__desc">Уроки, инструкции, разборы «под ключ» — от идеи до файла.</p>
+                    <div class="price__amount">по запросу</div>
+                    <ul class="price__list">
+                        <li>Сценарий и структура</li>
+                        <li>Срок от 3 дней</li>
+                        <li>Полный монтаж</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline btn--block" data-scroll>Заказать</a>
+                </article>
+
+            </div>
+            <p class="pricing__note reveal">Нестандартная задача или комплекс роликов? Напишите — подберу оптимальный формат и посчитаю стоимость. Первая консультация бесплатна.</p>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="section__head reveal">
+                <h2 class="section__title">Давайте сделаем <span class="grad">ваше видео</span></h2>
+                <p class="section__subtitle">Расскажите о задаче в пару строк — я предложу решение и стоимость. Отвечаю всем, пишите!</p>
+            </div>
+            <div class="contact__grid">
+                <form class="contact__form reveal" id="contactForm">
+                    <label class="field">
+                        <span class="field__label">Ваше имя</span>
+                        <input type="text" name="name" placeholder="Как к вам обращаться" required>
+                    </label>
+                    <label class="field">
+                        <span class="field__label">Ваш e-mail</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label class="field">
+                        <span class="field__label">Расскажите о задаче</span>
+                        <textarea name="message" rows="5" placeholder="Пара строк о вашем проекте..." required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn--primary btn--block">
+                        <span class="btn__shine"></span>Отправить
+                    </button>
+                    <p class="form__status" id="formStatus" role="status"></p>
+                </form>
+                <div class="contact__info reveal">
+                    <h3>Контакты</h3>
+                    <p>Пишите на e-mail — отвечаю всем:</p>
+                    <a href="mailto:example@email.com" class="contact__mail" id="contactMail">example@email.com</a>
+                    <p class="contact__meta">Николай · ИИ-креатор<br>Набережные Челны, Россия<br>Работаю онлайн по всей России</p>
+                    <div class="contact__socials">
+                        <a href="mailto:example@email.com" aria-label="Написать на e-mail" class="social" id="socialMail">✉️</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#hero" class="nav__logo" data-scroll>
+                <span class="nav__logo-mark">НК</span>
+                <span class="nav__logo-text">ИИ-креатор</span>
+            </a>
+            <p class="footer__copy">© <span id="year"></span> Николай · ИИ-креатор · Набережные Челны</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
